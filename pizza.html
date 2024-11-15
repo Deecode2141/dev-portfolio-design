@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Email Design</title>
+    <style>
+     	html {
+		box-sizing: border-box;
+	}
+
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #000;
+        height: auto;
+        justify-content: space-around;
+        padding: 40px 60px;
+    }
+
+
+    .container .column {
+        width: 50%;
+        height:auto;
+        overflow: hidden;
+    }
+
+
+    h2{
+     color:#fff;
+     text-transform: uppercase;
+     font-size: 2.8em;
+     text-align: left;
+     padding-bottom: 50px;
+     padding-left: 40px;
+    }
+
+    h3{
+        color: #b3560b;
+        text-transform: uppercase;
+        font-size: 3.5em;
+        font-weight: 700;
+        padding-left: 40px;
+        margin-bottom: 28px;
+    }
+
+
+    p{
+        color:#fff;
+        max-width: 900px;
+        padding: 0 10px;
+        font-size: 1.3em;
+        line-height: 1.6;
+        padding-left: 40px;
+       
+    }
+
+    img{
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin-bottom: 40px;
+        padding-left: 40px;
+    }
+
+    .gif{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .color-gif{
+        color: #b3560b;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    a {
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 1.5em;
+       transition: all ease-in .3s;
+    }
+
+    a:hover{
+        color:#a1a1a1;
+    }
+
+    .gif-box{
+        height: 1000px;
+    }
+
+    /***Max-width 1280px**/
+
+    @media screen and (max-width: 1280px) {
+    
+    .container{
+        padding: 10px 20px;
+    }
+    .container .column {
+        width: 100%;
+        height:auto;
+      }
+
+        p{
+            color:#fff;
+            max-width: 900px;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+
+    }
+
+   /*** Max-width 700px **/
+   @media screen and (max-width: 700px){
+     .gif{
+        display:block;
+        margin: 0 auto;
+        max-width: 300px;
+        height: auto;
+    }
+
+    a{
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+
+    img{
+        padding: 0 10px;
+    }
+
+    p{
+    padding: 0 10px;
+    font-size: 1em;
+    }
+
+
+    h2{
+        font-size: 2em;
+        padding: 0 5px;
+    }
+
+    h3{
+        font-size: 2.2em;
+        padding: 0 10px;
+    }
+
+
+   }
+
+   /** Mobile size max-width 344px **/
+   @media screen and (max-width: 380px){
+    h3{
+        font-size: 2em;
+    }
+   }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="column img-info">
+             <a href="index.html">Back</a>
+                <h2>Pizza email design</h2>
+                <h3>The process</h3>
+                <p>This project outlines the process of designing a mobile-responsive email campaign for Raggio's Pizza Pie, focusing on creativity and problem-solving. The email design features a visually engaging <spam class="color-gif">GIF of slices being taken</spam>, employs color psychology to highlight the fresh ingredients in each pizza, and incorporates a marketing strategy that showcases the deliciousness of the product and drives customer engagement.<br><br>Additionally, successful outcomes include the introduction of customer incentives, such as a rewards program where customers earn points for every slice purchased—collecting 15 points could earn them a free pizza and soda. This strategy not only enhances customer loyalty but also opens up future growth opportunities, such as expanding the menu, increasing repeat business, and boosting brand awareness through word-of-mouth and social sharing.</p>
+                <img src="images/pizza-Gif.gif" class="gif" alt="A gif of pizza being taken">
+                
+                <div>
+                    <img src="images/pizza-mockup-desktop.png" alt="pizza email design">
+                </div>
+            </div>
+
+            <div class="column img-info">
+                   <h3>Mobile design</h3>
+                   <img src="images/pizza-mobile-mockup.png" alt="Pizza mobile mockup design">
+               </div>
+       </div>
+</body>
+</html>

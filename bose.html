@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bose Email Design</title>
+    <style>
+     	html {
+		box-sizing: border-box;
+	}
+
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #000;
+        height: auto;
+        justify-content: space-around;
+        padding: 40px 60px;
+    }
+
+
+    .container .column {
+        width: 50%;
+        height:auto;
+        overflow: hidden;
+    }
+
+
+    h2{
+     color:#fff;
+     text-transform: uppercase;
+     font-size: 2.8em;
+     text-align: left;
+     padding-bottom: 50px;
+     padding-left: 40px;
+    }
+
+    h3{
+        color: #93bbf8;
+        text-transform: uppercase;
+        font-size: 3.5em;
+        font-weight: 700;
+        padding-left: 40px;
+        margin-bottom: 28px;
+    }
+
+    h4{
+        color: #cacaca;
+        padding-top: 50px;
+        padding-left: 40px;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    p{
+        color:#fff;
+        max-width: 900px;
+        padding: 0 10px;
+        font-size: 1.3em;
+        line-height: 1.6;
+        padding-left: 40px;
+    }
+
+    img{
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        margin-bottom: 40px;
+        padding-left: 40px;
+    }
+
+    .wf-img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+       
+    }
+
+
+
+    ul li{
+       color:#fff;
+       font-size: 1.2em;
+       max-width: 900px;
+       line-height: 1.4;
+       margin-left: 30px;
+    }
+    
+    a {
+       text-transform: uppercase;
+       color: #fff;
+       font-size: 1.5em;
+       transition: all ease-in .3s;
+       text-decoration: underline;
+    }
+
+    a:hover{
+        color:#a1a1a1;
+    }
+
+    .text-info{
+        align-content: start;
+    }
+
+
+    /***Max-width 1280px**/
+
+    @media screen and (max-width: 1280px) {
+    
+    .container{
+        padding: 10px 20px;
+    }
+    .container .column {
+        width: 100%;
+        height:auto;
+      }
+
+        p{
+            color:#fff;
+            max-width: 900px;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        ul li{
+       color:#fff;
+       font-size: 1.2em;
+       max-width: 900px;
+       line-height: 1.4;
+       margin-left: 30px;
+    }
+
+    }
+
+   /*** Max-width 700px **/
+   @media screen and (max-width: 700px){
+        .wf-img{
+        max-width: 300px;
+        height: auto;
+        padding: 0 10px;
+    }
+
+    a{
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+
+    img{
+        padding: 0 10px;
+    }
+
+    p{
+    padding: 0 10px;
+    font-size: 1em;
+    }
+
+    ul li{
+      margin-left: 0;
+      font-size: 1em;
+    }
+
+    h2{
+        font-size: 2em;
+        padding: 0 5px;
+    }
+
+    h3{
+        font-size: 2.2em;
+        padding: 0 10px;
+    }
+
+    h4{
+        font-size: 1em;
+        padding: 0 10px;
+    }
+
+
+   }
+
+   /** Mobile size max-width 344px **/
+   @media screen and (max-width: 380px){
+    h3{
+        font-size: 2em;
+    }
+   }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+     
+            <div class="column img-info">
+                <a href="index.html">Back</a>
+                <h2>Bose email design</h2>
+                <h3>The process</h3>
+                <p>
+                    This email design project process outlines the comprehensive journey of promoting a Bose blue dust-resistant headset. By focusing on user research, responsive design, and compelling content, the campaign successfully communicates the product's benefits and drives engagement.<br>
+                    <ul>
+                        <li>
+                            Design wireframes: For the email layout, ensuring an engaging and intuitive structure.
+                        </li><br>
+                        <li>
+                            Example: I included sections for product images, a description of the products, and a clear call to action (CTA).
+                        </li><br>
+                        <li>
+                            Challenge: Some images did not render correctly on mobile devices (like the hero image) during initial tests.
+                        </li><br>
+                        <li>
+                            Solution: I Adjusted image sizes and optimize loading times to ensure compatibility across all devices.
+                        </li>
+                    </ul>
+                </p>
+                <img src="images/bose-desktop-mockup.png" alt="bose desktop mockup design">
+                <h4>Wireframe design</h4>
+                <img src="images/wireframe-bose.png" alt="bose wireframe design" class="wf-img">
+            </div>
+             
+            <div class="column img-info">
+                <h3>Mobile design</h3>
+                <img src="images/bose-mobile-mockup.png" alt="bose mobile mockup design">
+            </div>
+            
+    </div>
+</body>
+</html>
